@@ -22,7 +22,7 @@ subnet_ids = "subnet-2a888a63,subnet-2f4da549"
 
 
 # APPLICATION VARS:
-docker_image = "f5devcentral/f5-demo-app:AWS"
+docker_image = "f5devcentral/f5-demo-app:blue"
 
 
 ssh_key_name = "004-VE-DEMO"
