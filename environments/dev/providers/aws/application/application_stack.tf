@@ -23,6 +23,13 @@ variable site_ssl_cert { default = "none" }
 variable site_ssl_key  { default = "none" }
 
 
+#### AUTO SCALE
+variable scale_min      { default = 1 }
+variable scale_max      { default = 3 }
+variable scale_desired  { default = 1 }
+
+
+
 ########################################
 
 provider "aws" {
@@ -46,6 +53,9 @@ module "app" {
   instance_type = "${var.instance_type}"
   ssh_key_name = "${var.ssh_key_name}"
   restricted_src_address  = "${var.restricted_src_address}"
+  scale_min = "${var.scale_min}"
+  scale_max = "${var.scale_max}"
+  scale_desired = "${var.scale_desired}"
 }
 
 output "sg_id" { value = "${module.app.sg_id}" }
