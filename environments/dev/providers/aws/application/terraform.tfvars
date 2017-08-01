@@ -21,9 +21,6 @@ availability_zones = "us-west-2a,us-west-2b"
 subnet_ids = "subnet-2a888a63,subnet-2f4da549"
 
 
-# APPLICATION VARS:
-docker_image = "f5devcentral/f5-demo-app:blue"
-
 
 ssh_key_name = "004-VE-DEMO"
 
@@ -101,5 +98,15 @@ amis = {
     "us-west-1" = "ami-30476250"
     "us-west-2" = "ami-17ba2a77"
 }
+
+
+# APPLICATION VARS:
+docker_image = "f5devcentral/f5-demo-app:blue"
+
+# AUTO SCALE
+scale_min = 1
+scale_max = 3
+scale_desired = 2
+
 
 
