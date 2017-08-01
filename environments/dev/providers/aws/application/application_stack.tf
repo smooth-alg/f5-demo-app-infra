@@ -17,7 +17,6 @@ variable subnet_ids {}
 variable docker_image {}
 variable amis { type = "map" }
 variable instance_type {}
-variable public_key_path {}
 variable ssh_key_name {}
 variable restricted_src_address { default = "0.0.0.0/0" }
 variable site_ssl_cert { default = "none" }
