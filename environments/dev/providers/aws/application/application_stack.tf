@@ -37,7 +37,7 @@ provider "aws" {
 }
 
 module "app" {
-  source = "github.com/f5devcentral/f5-terraform//modules/providers/aws/application?ref=v0.0.8"
+  source = "github.com/f5devcentral/f5-terraform//modules/providers/aws/application"
   application_dns = "${var.application_dns}"
   application = "${var.application}"
   environment = "${var.environment}"
