@@ -101,12 +101,12 @@ amis = {
 
 
 # APPLICATION VARS:
-docker_image = "f5devcentral/f5-demo-app:blue"
+docker_image = "f5devcentral/f5-demo-app:green"
 
 # AUTO SCALE
-scale_min = 2
+scale_min = 3
 scale_max = 3
-scale_desired = 2
+scale_desired = 3
 
 # 
 
