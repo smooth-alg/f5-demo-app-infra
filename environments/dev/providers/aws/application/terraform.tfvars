@@ -104,9 +104,9 @@ amis = {
 docker_image = "f5devcentral/f5-demo-app:blue"
 
 # AUTO SCALE
-scale_min = 3
+scale_min = 1
 scale_max = 3
-scale_desired = 3
+scale_desired = 2
 
 # 
 
